@@ -17,6 +17,8 @@ from routers.movie_cast import movie_cast_router
 
 
 
+
+
 app = FastAPI()
 app.title = "Mi app con FastAPI"
 app.version = "0.0.1"
@@ -26,6 +28,8 @@ app.include_router(movie_router)
 app.include_router(user_router)
 app.include_router(actor_router)
 app.include_router(movie_cast_router)
+
+
 
 
 
