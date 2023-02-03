@@ -10,8 +10,8 @@ class DirectorService():
 
     def create_director(self,director:DirectorModel):
         new_director = DirectorModel(
-        director_first_name = director.director_first_name ,
-        director_last_name = director.director_last_name,    
+        dir_fname = director.dir_fname ,
+        dir_lname = director.dir_lname,    
 
 
         )

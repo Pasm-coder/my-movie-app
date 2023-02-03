@@ -7,5 +7,5 @@ class Genres(Base):
 
     __tablename__ = "genres"
 
-    id = Column(Integer, primary_key=True, index=True)
+    gen_id = Column(Integer, primary_key=True, index=True)
     gen_title = Column(String)

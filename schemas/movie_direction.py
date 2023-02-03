@@ -5,8 +5,8 @@ from pydantic import BaseModel, Field
 
 class MovieDirection(BaseModel):
 
-    dir_id: Optional[int] = None
-    mov_id: Optional[int] = None
+    dir_id: int
+    mov_id: int
     
     class Config:
             schema_extra = {
