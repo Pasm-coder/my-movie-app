@@ -2,10 +2,10 @@ from typing import Optional
 from pydantic import BaseModel, Field
 
 
-class Director(BaseModel):
+class Rating(BaseModel):
 
-    id = Optional[int] = None
-    mov_id: int
+    
+    movie_id: int
     rev_id: int
     rev_stars: int
     num_o_ratings: int
@@ -13,7 +13,7 @@ class Director(BaseModel):
     class Config:
             schema_extra = {
                 "example":{
-                    "mov_id":"4",
+                    "movie_id":"4",
                     "rev_id":"3",
                     "rev_stars":"5",
                     "num_o_ratings":"8",

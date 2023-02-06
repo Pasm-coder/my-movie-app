@@ -8,6 +8,6 @@ class MovieDirection(Base):
     __tablename__="movie_direction"
 
     id = Column(Integer, primary_key=True, index=True)
-    direction_id = Column(Integer, ForeignKey("dir_id"))
-    movie_id = Column(Integer, ForeignKey("mov_id"))
+    director_id = Column(Integer, ForeignKey("director.director_id"))
+    movie_id = Column(Integer, ForeignKey("movie.id"))
     

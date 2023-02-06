@@ -9,7 +9,7 @@ class Rating(Base):
     __tablename__ = "rating"
 
     id = Column(Integer, primary_key=True, index=True)
-    mov_id = Column(Integer, ForeignKey("mov_id "))
-    rev_id = Column(Integer, ForeignKey("rev_id "))
+    movie_id = Column(Integer, ForeignKey("movie.id"))
+    rev_id = Column(Integer, ForeignKey("reviewer.id "))
     rev_stars = Column(Integer)
     num_o_ratings = Column(Integer)
