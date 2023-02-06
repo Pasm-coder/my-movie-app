@@ -14,10 +14,10 @@ from service.movie_direction import MovieDirectionService
 movie_direction_router = APIRouter()
 
 
-@movie_direction_router.get('/movie/{dir_id}/direction/', tags=['direction'],response_model=list[MovieDirection],status_code=200)
-def get_movie_direction(dir_id:int ):
+@movie_direction_router.get('/movie/{direction_id}/direction/', tags=['direction'],response_model=list[MovieDirection],status_code=200)
+def get_movie_direction(direction_id:int ):
     db = Session()
-    result = MovieDirectionService(db).get_movie_direction(dir_id)
+    result = MovieDirectionService(db).get_movie_direction(direction_id)
     if not result:
         return JSONResponse(content={"message":"No se ha encontrado el registro","status_code":"404"})
     return JSONResponse(content=jsonable_encoder(result), status_code=200)

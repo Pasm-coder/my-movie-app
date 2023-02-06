@@ -5,13 +5,13 @@ from pydantic import BaseModel, Field
 
 class MovieDirection(BaseModel):
 
-    dir_id: int
-    mov_id: int
+    direction_id: int
+    movie_id: int
     
     class Config:
             schema_extra = {
                 "example":{
-                    "dir_id":1,
-                    "mov_id":2,
+                    "direction_id":1,
+                    "movie_id":2,
                 }
             }

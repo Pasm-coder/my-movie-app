@@ -7,6 +7,6 @@ class Director(Base):
 
     __tablename__ = "director"
 
-    dir_id = Column(Integer,primary_key = True)
-    dir_fname = Column(String)
-    dir_lname = Column(String)
+    director_id = Column(Integer,primary_key = True)
+    director_fname = Column(String)
+    director_lname = Column(String)

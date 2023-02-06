@@ -4,14 +4,14 @@ from pydantic import BaseModel, Field
 
 class Director(BaseModel):
 
-    dir_id = Optional[int] = None
-    dir_fname: str = Field(max_length=15,min_length=3)
-    dir_lname: str = Field(max_length=15,min_length=3)
+    
+    director_fname: str = Field(max_length=15,min_length=3)
+    director_lname: str = Field(max_length=15,min_length=3)
     
     class Config:
             schema_extra = {
                 "example":{
-                    "dir_fname": "Bryan",
-                    "dir_lname": "Singer",
+                    "director_fname": "Bryan",
+                    "director_lname": "Singer",
                 }
             }

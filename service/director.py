@@ -1,5 +1,6 @@
 from models.director import Director as DirectorModel
 
+
 class DirectorService():
     def __init__(self,db) -> None:
         self.db = db
@@ -10,8 +11,8 @@ class DirectorService():
 
     def create_director(self,director:DirectorModel):
         new_director = DirectorModel(
-        dir_fname = director.dir_fname ,
-        dir_lname = director.dir_lname,    
+        director_fname = director.director_fname ,
+        director_lname = director.director_lname,    
 
 
         )

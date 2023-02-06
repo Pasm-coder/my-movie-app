@@ -10,7 +10,7 @@ class GenresService():
 
     def create_genres(self,genres:GenresModel):
         new_genres = GenresModel(
-        gen_title = genres.gen_title ,   
+        genres_title = genres.genres_title ,   
 
         )
         self.db.add(new_genres)
