@@ -1,4 +1,5 @@
 from models.reviewer import Reviewer as ReviewerModel
+from schemas.reviewer import Reviewer
 
 class ReviewerService():
     def __init__(self,db) -> None:
@@ -14,6 +15,7 @@ class ReviewerService():
             rev_name=reviewer.rev_name,   
 
         )
-        self.db.add(reviewer)
+        self.db.add(new_reviewer)
         self.db.commit()
         return
+    
